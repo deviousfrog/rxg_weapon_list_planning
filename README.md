@@ -25,16 +25,32 @@ I'm not organized but this is what I've thought of so far.
   * example: "STEAM_0:1:13776935" or "*"
 
 ### weapon ###
-* tf2items_id (weapon ids from [here](https://wiki.alliedmods.net/Team_fortress_2_item_definition_indexes))
-* friendly_name
+Note: For this one I copied anything I thought might be remotely useful from the item schema
+
+* name
+* defindex
+* item_class
+* item_type_name
+* item_name
+* item_description
+* proper_name
+* item_slot
+* item_quality
 * image_url
 * image_url_large
+* min_ilevel
+* max_ilevel
 
-### stat ###
-* tf2items_id (ids from [here](https://wiki.teamfortress.com/wiki/List_of_item_attributes))
-* description (description from same place [here](https://wiki.teamfortress.com/wiki/List_of_item_attributes))
-* value_type (we might not need this for functionality but it might be useful to tell the admins what kind of number they are typing in, so this could be used in the UI. Again this is taken from [here](https://wiki.teamfortress.com/wiki/List_of_item_attributes))
-* enabled (I'm assuming were going to somehow import all of the stats and some of them we will never want to use, so we could "disable" them and have them removed from the admin UI? to make things simpler?)
+### attribute ###
+Note: this structure is taken directly from the item schema
+* name
+* defindex
+* attribute_class
+* description_string
+* description_format
+* effect_type
+* hidden
+* stored_as_integer
 
 ### class ###
 * id
@@ -44,9 +60,9 @@ I'm not organized but this is what I've thought of so far.
 * weapon_id
 * class_id
 
-### weapon_stats ###
+### weapon_attributes ###
 * weapon_id
-* stat_id
+* attribute_id
 * stat_value
 * created_at
 * updated_at
@@ -58,7 +74,7 @@ I'm not organized but this is what I've thought of so far.
 
 ## Example tf2items.weapons.txt file ##
 
-http://hg.limetech.org/projects/tf2items/tf2items_source/diff/19eeebf8ccaa/tf2items.weapons.txt
+
 
 
 ## Front end technologies ##
@@ -75,6 +91,7 @@ http://hg.limetech.org/projects/tf2items/tf2items_source/diff/19eeebf8ccaa/tf2it
 
 * [Find your current steam web api key](https://steamcommunity.com/dev/apikey)
 * [Description of the GetSchema call](https://wiki.teamfortress.com/wiki/WebAPI/GetSchema)
+* [Example tf2items.weapons.txt](http://hg.limetech.org/projects/tf2items/tf2items_source/diff/19eeebf8ccaa/tf2items.weapons.txt)
 
 ## High level functionality ##
 
