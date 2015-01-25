@@ -54,7 +54,7 @@ Note: this structure is taken directly from the item schema
 
 ### class ###
 * id
-* friendly_name
+* name
 
 ### weapon_classes ###
 * weapon_id
