@@ -94,6 +94,7 @@ Note: this structure is taken directly from the item schema
 * [Example tf2items.weapons.txt](http://hg.limetech.org/projects/tf2items/tf2items_source/diff/19eeebf8ccaa/tf2items.weapons.txt)
 * [Parse VDF to JSON](https://gist.github.com/AlienHoboken/5571903)
 * [another parser](https://github.com/rossengeorgiev/vdf-parser)
+* [another for good measure](https://github.com/devinwl/keyvalues-php)
 
 ## High level functionality ##
 
