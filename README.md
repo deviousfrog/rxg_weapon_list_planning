@@ -92,6 +92,7 @@ Note: this structure is taken directly from the item schema
 * [Find your current steam web api key](https://steamcommunity.com/dev/apikey)
 * [Description of the GetSchema call](https://wiki.teamfortress.com/wiki/WebAPI/GetSchema)
 * [Example tf2items.weapons.txt](http://hg.limetech.org/projects/tf2items/tf2items_source/diff/19eeebf8ccaa/tf2items.weapons.txt)
+* [Parse VDF to JSON]https://gist.github.com/AlienHoboken/5571903
 
 ## High level functionality ##
 
