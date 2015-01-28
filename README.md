@@ -5,8 +5,8 @@ I'm not organized but this is what I've thought of so far.
 
 ## Questions ##
 
-* What kind of database server are we using? MySQL, postgres, something crazy? Is there something usable on the server already?
-* When the tf2items.weapons.txt file is updated does the server instantly used the updated stats? Or does something need to happen before they are used?
+* What kind of database server are we using? MySQL. We are limited to MyISam tables.
+* When the tf2items.weapons.txt file is updated does the server instantly used the updated stats? Its not instant, we have to execute a few commands, it should happen within 10 seconds of "pushing".
 * How are we going to handle the addition of new weapons / stats?
  * This could be done manually through the backend interface. So we would have a create form for weapons and one for stats and admins could do this themselves.
  * We could attempt to periodically check for new weapons / stats and add them automatically.
